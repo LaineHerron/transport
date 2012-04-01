@@ -10,17 +10,14 @@
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAHuRsJH37S3hiW7ig9SJBnCJQ_1H3Zf_w&sensor=true">
     </script>
-    <script type="text/javascript">
-      function initialize() {
-        var myOptions = {
-          center: new google.maps.LatLng(40.443504, -79.941571),
-          zoom: 16,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        };
-        var map = new google.maps.Map(document.getElementById("map_canvas"),
-            myOptions);
-      }
-    </script>
+    
+
+    <!-- our Javascripts -->
+    <script src="javascript/initialize.js"></script>
+    <script src="javascript/controls.js"></script>
+
+
+
   </head>
   <body onload="initialize()">
     <div id="map_canvas" style="width:100%; height:100%"></div>
