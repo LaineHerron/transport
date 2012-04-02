@@ -11,15 +11,13 @@
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAHuRsJH37S3hiW7ig9SJBnCJQ_1H3Zf_w&sensor=true">
     </script>
     
-
     <!-- our Javascripts -->
     <script src="javascript/initialize.js"></script>
     <script src="javascript/controls.js"></script>
-
-
+  
 
   </head>
-  <body onload="initialize()">
+  <body onload="initialize()" onunload="GUnload()">
     <div id="map_canvas" style="width:100%; height:100%"></div>
   </body>
 </html>
