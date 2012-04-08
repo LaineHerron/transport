@@ -1,8 +1,5 @@
 var map;
 var geocoder;
-var chicago = new google.maps.LatLng(41.850033, -87.6500523);
-
-
 
 function initialize() {
     
@@ -18,13 +15,5 @@ function initialize() {
 
     geocoder = new GClientGeocoder();
 
-
-    // Create the DIV to hold the control and call the HomeControl() constructor
-    // passing in this DIV.
-    var homeControlDiv = document.createElement('DIV');
-    var homeControl = new HomeControl(homeControlDiv, map);
-    
-    homeControlDiv.index = 1;
-    map.controls[google.maps.ControlPosition.BUTTON_CENTER].push(homeControlDiv);
 
 }
